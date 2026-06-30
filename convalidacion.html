@@ -625,9 +625,9 @@ function pintarIdentidad(){
           <div class="dc">${esc((p.tipoDoc==='rut'?'RUT':'Pasaporte')+' '+(p.documento||''))} · ${esc(p.correo||'')}</div>
         </div>
       </div>
-      <a class="salir" href="acceso_postulante.html">Salir</a>`;
+      <a class="salir" href="index.html">Salir</a>`;
   } else {
-    if(GATE_ESTRICTO){ window.location.href='acceso_postulante.html'; return; }
+    if(GATE_ESTRICTO){ window.location.href='index.html'; return; }
     bar.className='idbar anon';
     bar.innerHTML=`
       <div class="who">
@@ -637,7 +637,7 @@ function pintarIdentidad(){
           <div class="dc">Para una solicitud real, identifícate primero.</div>
         </div>
       </div>
-      <a class="salir" href="acceso_postulante.html">Identificarme</a>`;
+      <a class="salir" href="index.html">Identificarme</a>`;
   }
 }
 
